@@ -5,11 +5,15 @@ import { columns } from './columns';
 import { DataTable } from './data-table';
 import { getDriverStandings } from 'src/services';
 
-export default function StandingsTable() {
+interface StandingsTableProps {
+  season: number;
+}
+
+const StandingsTable: React.FC<StandingsTableProps> = ({ season }) => {
   const [standings, setStandings] = useState<DriverStanding[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const season = 2023;
+
   useEffect(() => {
     const fetchStandings = async () => {
       try {
@@ -43,11 +47,13 @@ export default function StandingsTable() {
   }
 
   return (
-    <div className="container mx-auto py-10 min-h-screen  p-8">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-8">
+    <div className="container mx-auto py-10 min-h-screen p-8">
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-14">
         2023 Driver Standings
       </h1>
       <DataTable columns={columns} data={standings} />
     </div>
   );
-}
+};
+
+export default StandingsTable;

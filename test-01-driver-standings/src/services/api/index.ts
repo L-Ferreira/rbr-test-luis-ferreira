@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { DriverStanding, DriverStandingResponse } from './types';
 import { transformDriverData } from 'src/lib/utils';
+import { debounce } from 'lodash';
 
 const apiClient = axios.create({
   baseURL: process.env.REACT_APP_API_BASE_URL,
@@ -10,7 +11,7 @@ const apiClient = axios.create({
   },
 });
 
-export const getDriverStandings = async (season: number): Promise<DriverStanding[]> => {
+const makeRequest = async (season: number): Promise<DriverStanding[]> => {
   try {
     const response = await apiClient.get<DriverStandingResponse[]>(`/${season}`);
     return transformDriverData(response.data);
@@ -19,3 +20,9 @@ export const getDriverStandings = async (season: number): Promise<DriverStanding
     throw error;
   }
 };
+
+export const getDriverStandings = debounce(makeRequest, 500, {
+  leading: true,
+  trailing: false,
+  maxWait: 2000,
+});

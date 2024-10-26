@@ -63,7 +63,7 @@ export const columns: CustomColumnDef<DriverStanding>[] = [
   },
   {
     accessorKey: 'driverCountry',
-    header: ({ column }) => <SortButton column={column}>Driver Country</SortButton>,
+    header: ({ column }) => <SortButton column={column}>Nationality</SortButton>,
 
     cell: ({ row }) => {
       const nationality = row.original.driverCountry;
