@@ -17,11 +17,10 @@ const HeroBanner = () => {
   return (
     <div ref={ref} className="w-full h-screen overflow-hidden relative grid masked-content">
       <div
-        className="flex flex-col max-w-5xl "
-        style={{ marginLeft: '120px', marginTop: '220px', gap: '230px' }}
+        className="flex flex-col max-w-5xl mx-6 mt-44 gap-80 md:ml-20 lg:ml-[120px] md:mt-[220px] md:gap-[180px] lg:gap-[230px]"
       >
         <motion.h1
-          className="font-bold text-white text-[9rem] leading-none relative z-10"
+          className="font-bold text-white text-[5rem] sm:text-8xl md:text-9xl lg:text-[9rem] leading-none relative z-10"
           style={{
             y: textY,
           }}

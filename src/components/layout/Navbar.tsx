@@ -22,11 +22,11 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="pl-4 flex items-center">
           <Image src="/redbullracing-logo.png" alt="Logo" width={160} height={80} priority />
         </Link>
 
-        <div className="flex gap-2 md:gap-4">
+        <div className="ml-1 flex md:gap-4">
           <Button
             className="hover:underline text-white font-bold text-base decoration-redbull-red decoration-2 underline-offset-8"
             variant="link"
