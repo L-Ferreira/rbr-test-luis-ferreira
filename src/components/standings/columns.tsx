@@ -1,16 +1,16 @@
 import { ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react';
 import { Button } from '../ui/button';
-import { DriverStanding } from 'src/services/api/types';
-import { ColumnDef } from '@tanstack/react-table';
+import { Column, ColumnDef } from '@tanstack/react-table';
 import Image from 'next/image';
 import { FLAGS } from '@/lib/country-flags';
+import { DriverStanding } from '@/services/api/types';
 
 export type CustomColumnDef<TData, TValue = unknown> = ColumnDef<TData, TValue> & {
   customHeaderClassName?: string;
   customCellClassName?: string;
 };
 
-const SortButton = ({ column, children }: { column: any; children: React.ReactNode }) => {
+const SortButton = ({ column, children }: { column: Column<DriverStanding, unknown>; children: React.ReactNode }) => {
   const isSorted = column.getIsSorted();
 
   return (
