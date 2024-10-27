@@ -28,14 +28,14 @@ const Navbar = () => {
 
         <div className="ml-1 flex md:gap-4">
           <Button
-            className="hover:underline text-white font-bold text-base decoration-redbull-red decoration-4 underline-offset-8"
+            className="hover:underline text-white font-bold text-base decoration-redbull-red decoration-2 underline-offset-[10px]"
             variant="link"
             asChild
           >
             <Link href="/standings">Standings</Link>
           </Button>
           <Button
-            className="hover:underline text-white font-bold text-base decoration-redbull-red decoration-4 underline-offset-8"
+            className="hover:underline text-white font-bold text-base decoration-redbull-red decoration-2 underline-offset-[10px]"
             variant="link"
             asChild
           >

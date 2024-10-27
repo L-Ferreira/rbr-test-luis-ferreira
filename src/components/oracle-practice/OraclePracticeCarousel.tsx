@@ -1,16 +1,19 @@
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
 
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import OraclePracticeCard from './OraclePracticeCard';
+import { Play, ChartPie } from 'lucide-react';
+import { CardDataProps } from './types';
 
-const CARDS = [
+const CARDS: CardDataProps[] = [
   {
     title: 'Oracle Virtual Lap in Monza',
     type: 'Virtual Lap',
     duration: '6 min read',
     image: '/OracleInPractice/virtual-lap.png',
     gradient: '',
+    icon: Play,
+    externalLink: 'https://www.redbullracing.com/int-en/videos/oracle-virtual-laps-2023-monza',
   },
   {
     title: 'Oracle Strategy Guide',
@@ -18,6 +21,9 @@ const CARDS = [
     duration: '4 min',
     image: '/OracleInPractice/strategy-guide.png',
     gradient: 'bg-gradient-to-tl from-blue-900/80 to-transparent',
+    icon: Play,
+    externalLink:
+      'https://www.redbullracing.com/int-en/videos/mexico-city-grand-prix-2024-oracle-strategy-guide/',
   },
   {
     title: 'Oracle Cloud Telemetry Data Checo',
@@ -25,6 +31,8 @@ const CARDS = [
     duration: '3 min read',
     image: '/OracleInPractice/telemetry-data.png',
     gradient: 'bg-gradient-to-tl from-blue-900/80 to-transparent',
+    icon: ChartPie,
+    externalLink: 'https://www.oracle.com/',
   },
 ];
 
