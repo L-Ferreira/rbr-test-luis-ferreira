@@ -30,7 +30,7 @@ const DayHeader = ({ day, date }: DayHeaderProps) => (
       <p className="text-sm md:text-base font-bold">{date}th</p>
       <p className="text-xs font-bold">MAY</p>
     </div>
-    <div className="text-xl md:text-2xl font-bold">
+    <div className="text-2xl md:text-2xl font-bold">
       <p>{day}</p>
     </div>
   </div>

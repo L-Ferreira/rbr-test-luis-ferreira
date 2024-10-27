@@ -33,7 +33,7 @@ const OraclePracticeCard = ({
           </CardTitle>
         </CardHeader>
         <CardFooter className="flex flex-col gap-4 items-start">
-          <p className="font-bold text-xl">{title}</p>
+          <p className="font-bold text-2xl">{title}</p>
           <div className="flex w-full justify-between text-sm items-baseline">
             <div className="bg-redbull-background-opacity backdrop-blur-lg rounded px-2 py-1">
               {type}
