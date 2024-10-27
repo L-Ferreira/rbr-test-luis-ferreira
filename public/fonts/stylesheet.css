@@ -22,41 +22,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Futura PT Demi';
-    src: url('FuturaPT-DemiObl.eot');
-    src: local('Futura PT Demi Oblique'), local('FuturaPT-DemiObl'),
-        url('FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-DemiObl.woff2') format('woff2'),
-        url('FuturaPT-DemiObl.woff') format('woff'),
-        url('FuturaPT-DemiObl.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura PT Cond Extra';
-    src: url('FuturaPTCond-ExtraBoldObl.eot');
-    src: local('Futura PT Cond Extra Bold Oblique'), local('FuturaPTCond-ExtraBoldObl'),
-        url('FuturaPTCond-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-ExtraBoldObl.woff2') format('woff2'),
-        url('FuturaPTCond-ExtraBoldObl.woff') format('woff'),
-        url('FuturaPTCond-ExtraBoldObl.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura PT Cond Book';
-    src: url('FuturaPTCond-Book.eot');
-    src: local('Futura PT Cond Book'), local('FuturaPTCond-Book'),
-        url('FuturaPTCond-Book.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-Book.woff2') format('woff2'),
-        url('FuturaPTCond-Book.woff') format('woff'),
-        url('FuturaPTCond-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Futura PT';
@@ -70,17 +35,7 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Futura PT Book';
-    src: url('FuturaPT-BookObl.eot');
-    src: local('Futura PT Book Oblique'), local('FuturaPT-BookObl'),
-        url('FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-BookObl.woff2') format('woff2'),
-        url('FuturaPT-BookObl.woff') format('woff'),
-        url('FuturaPT-BookObl.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
+
 
 @font-face {
     font-family: 'Futura PT';
@@ -94,65 +49,6 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Futura PT Cond';
-    src: url('FuturaPTCond-BoldObl.eot');
-    src: local('Futura PT Cond Bold Oblique'), local('FuturaPTCond-BoldObl'),
-        url('FuturaPTCond-BoldObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-BoldObl.woff2') format('woff2'),
-        url('FuturaPTCond-BoldObl.woff') format('woff'),
-        url('FuturaPTCond-BoldObl.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura PT Demi';
-    src: url('FuturaPT-Demi.eot');
-    src: local('Futura PT Demi'), local('FuturaPT-Demi'),
-        url('FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-Demi.woff2') format('woff2'),
-        url('FuturaPT-Demi.woff') format('woff'),
-        url('FuturaPT-Demi.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura PT Cond Book';
-    src: url('FuturaPTCond-BookObl.eot');
-    src: local('Futura PT Cond Book Oblique'), local('FuturaPTCond-BookObl'),
-        url('FuturaPTCond-BookObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-BookObl.woff2') format('woff2'),
-        url('FuturaPTCond-BookObl.woff') format('woff'),
-        url('FuturaPTCond-BookObl.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura PT Extra';
-    src: url('FuturaPT-ExtraBold.eot');
-    src: local('Futura PT Extra Bold'), local('FuturaPT-ExtraBold'),
-        url('FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-ExtraBold.woff2') format('woff2'),
-        url('FuturaPT-ExtraBold.woff') format('woff'),
-        url('FuturaPT-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura PT Cond';
-    src: url('FuturaPTCond-Medium.eot');
-    src: local('Futura PT Cond Medium'), local('FuturaPTCond-Medium'),
-        url('FuturaPTCond-Medium.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-Medium.woff2') format('woff2'),
-        url('FuturaPTCond-Medium.woff') format('woff'),
-        url('FuturaPTCond-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Futura PT';
@@ -163,18 +59,6 @@
         url('FuturaPT-Medium.woff') format('woff'),
         url('FuturaPT-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura PT Cond Extra';
-    src: url('FuturaPTCond-ExtraBold.eot');
-    src: local('Futura PT Cond Extra Bold'), local('FuturaPTCond-ExtraBold'),
-        url('FuturaPTCond-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-ExtraBold.woff2') format('woff2'),
-        url('FuturaPTCond-ExtraBold.woff') format('woff'),
-        url('FuturaPTCond-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
     font-style: normal;
 }
 
@@ -190,17 +74,6 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Futura PT Cond';
-    src: url('FuturaPTCond-Bold.eot');
-    src: local('Futura PT Cond Bold'), local('FuturaPTCond-Bold'),
-        url('FuturaPTCond-Bold.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-Bold.woff2') format('woff2'),
-        url('FuturaPTCond-Bold.woff') format('woff'),
-        url('FuturaPTCond-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Futura PT';
@@ -214,17 +87,6 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Futura PT Book';
-    src: url('FuturaPT-Book.eot');
-    src: local('Futura PT Book'), local('FuturaPT-Book'),
-        url('FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-Book.woff2') format('woff2'),
-        url('FuturaPT-Book.woff') format('woff'),
-        url('FuturaPT-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Futura PT';
@@ -238,27 +100,5 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Futura PT Cond';
-    src: url('FuturaPTCond-MediumObl.eot');
-    src: local('Futura PT Cond Medium Oblique'), local('FuturaPTCond-MediumObl'),
-        url('FuturaPTCond-MediumObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPTCond-MediumObl.woff2') format('woff2'),
-        url('FuturaPTCond-MediumObl.woff') format('woff'),
-        url('FuturaPTCond-MediumObl.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
 
-@font-face {
-    font-family: 'Futura PT Extra';
-    src: url('FuturaPT-ExtraBoldObl.eot');
-    src: local('Futura PT Extra Bold Oblique'), local('FuturaPT-ExtraBoldObl'),
-        url('FuturaPT-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-ExtraBoldObl.woff2') format('woff2'),
-        url('FuturaPT-ExtraBoldObl.woff') format('woff'),
-        url('FuturaPT-ExtraBoldObl.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
 
