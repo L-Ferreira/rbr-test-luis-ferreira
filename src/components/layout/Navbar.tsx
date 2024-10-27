@@ -21,7 +21,7 @@ const Navbar = () => {
         isScrolled ? 'bg-redbull-background-opacity backdrop-blur-lg' : ''
       }`}
     >
-      <div className="mx-auto px-4 h-20 flex items-center justify-between">
+      <div className="mx-auto px-4 md:px-7 h-20 flex items-center justify-between">
         <Link href="/" className="pl-4 flex items-center">
           <Image src="/redbullracing-logo.png" alt="Logo" width={160} height={80} priority />
         </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
             variant="link"
             asChild
           >
-            <Link href="/contact">Oracle In Practice</Link>
+            <Link href="/oracle-in-practice">Oracle In Practice</Link>
           </Button>
         </div>
       </div>

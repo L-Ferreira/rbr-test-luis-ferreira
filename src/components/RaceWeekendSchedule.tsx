@@ -39,7 +39,7 @@ const RaceWeekendSchedule = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12  py-20 md:py-40">
         <div className="flex gap-4 justify-around md:justify-normal md:gap-7">
           <DayHeader day="Friday" date="26" />
-          <div className='min-w-[200px]'>
+          <div className="min-w-[200px]">
             <SessionItem title="Practice 1" time="13:30 - 14:30" />
             <SessionItem title="Practice 2" time="17:00 - 18:00" />
           </div>
@@ -47,8 +47,7 @@ const RaceWeekendSchedule = () => {
 
         <div className="flex gap-4 justify-around md:justify-normal md:gap-7">
           <DayHeader day="Saturday" date="27" />
-                    <div className='min-w-[200px]'>
-
+          <div className="min-w-[200px]">
             <SessionItem title="Practice 3" time="12:30 - 13:30" />
             <SessionItem title="Qualifying" time="16:00 - 17:00" />
           </div>
@@ -56,8 +55,7 @@ const RaceWeekendSchedule = () => {
 
         <div className="flex gap-4 justify-around md:justify-normal md:gap-7 md:col-span-2 xl:col-span-1">
           <DayHeader day="Sunday" date="28" />
-                    <div className='min-w-[200px]'>
-
+          <div className="min-w-[200px]">
             <SessionItem title="Grand Prix" time="15:00 - 17:00" />
           </div>
         </div>
