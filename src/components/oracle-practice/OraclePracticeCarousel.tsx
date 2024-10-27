@@ -38,7 +38,7 @@ const CARDS: CardDataProps[] = [
 
 const OraclePracticeCarousel = () => {
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-screen overflow-hidden" data-testid="oracle-practice-carousel">
       <Carousel
         className="w-full"
         opts={{
@@ -48,7 +48,11 @@ const OraclePracticeCarousel = () => {
       >
         <CarouselContent className="ml-0 md:-ml-5">
           {CARDS.map((cardData, index) => (
-            <CarouselItem key={index} className="pl-5 basis-auto">
+            <CarouselItem
+              key={index}
+              className="pl-5 basis-auto"
+              data-testid="oracle-practice-carousel-item"
+            >
               <div className="p-1">
                 <OraclePracticeCard {...cardData} />
               </div>

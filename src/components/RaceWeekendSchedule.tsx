@@ -12,7 +12,10 @@ interface DayHeaderProps {
 }
 
 const SessionItem = ({ title, time }: SessionItemProps) => (
-  <div className="flex flex-col gap-2 justify-start mb-8 md:mb-16">
+  <div
+    className="flex flex-col gap-2 justify-start mb-8 md:mb-16"
+    data-testid={`${title}-session-description`}
+  >
     <p className="text-3xl md:text-5xl font-bold">{title}</p>
     <div className="flex pl-1 gap-2 items-center text-redbull-grey">
       <Clock className="h-4 w-4" />
@@ -22,7 +25,7 @@ const SessionItem = ({ title, time }: SessionItemProps) => (
 );
 
 const DayHeader = ({ day, date }: DayHeaderProps) => (
-  <div className="text-redbull-grey min-w-[100px]">
+  <div className="text-redbull-grey min-w-[100px]" data-testid={`session-${day}`}>
     <div className="flex items-start gap-1">
       <p className="text-sm md:text-base font-bold">{date}th</p>
       <p className="text-xs font-bold">MAY</p>
@@ -35,7 +38,7 @@ const DayHeader = ({ day, date }: DayHeaderProps) => (
 
 const RaceWeekendSchedule = () => {
   return (
-    <div className="container px-4">
+    <div className="container px-4" data-testid="race-schedule">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12  py-20 md:py-40">
         <div className="flex gap-4 justify-around md:justify-normal md:gap-7">
           <DayHeader day="Friday" date="26" />

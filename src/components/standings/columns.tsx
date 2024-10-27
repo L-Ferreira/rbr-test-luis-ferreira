@@ -10,7 +10,13 @@ export type CustomColumnDef<TData, TValue = unknown> = ColumnDef<TData, TValue> 
   customCellClassName?: string;
 };
 
-const SortButton = ({ column, children }: { column: Column<DriverStanding, unknown>; children: React.ReactNode }) => {
+const SortButton = ({
+  column,
+  children,
+}: {
+  column: Column<DriverStanding, unknown>;
+  children: React.ReactNode;
+}) => {
   const isSorted = column.getIsSorted();
 
   return (

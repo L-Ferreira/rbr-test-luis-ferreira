@@ -22,13 +22,14 @@ const HeroBanner = () => {
           style={{
             y: textY,
           }}
+          data-testid="hero-title"
         >
           Monaco Grand Prix
         </motion.h1>
 
-        <div className="flex flex-col z-30 gap-5">
+        <div className="flex flex-col z-30 gap-5" data-testid="hero-description">
           <div className="flex items-center text-2xl font-bold rounded shadow-md gap-4">
-            <Calendar className="h-6 w-6" /> <span>24 – 27 NOV 2023</span>
+            <Calendar className="h-6 w-6" /> <span>26 – 28 MAY 2023</span>
           </div>
           <div className="flex items-center text-2xl font-bold rounded shadow-md gap-4">
             <Image
