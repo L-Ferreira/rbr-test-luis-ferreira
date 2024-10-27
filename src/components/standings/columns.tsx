@@ -43,12 +43,12 @@ export const columns: CustomColumnDef<DriverStanding>[] = [
   {
     accessorKey: 'position',
     header: ({ column }) => <SortButton column={column}>Position</SortButton>,
-    customCellClassName: 'text-lg font-bold ',
+    customCellClassName: 'text-2xl font-bold ',
   },
   {
     accessorKey: 'driverName',
     header: ({ column }) => <SortButton column={column}>Driver Name</SortButton>,
-    customCellClassName: 'text-lg  ',
+    customCellClassName: 'text-xl',
   },
   {
     accessorKey: 'driverCountry',
@@ -82,6 +82,6 @@ export const columns: CustomColumnDef<DriverStanding>[] = [
   {
     accessorKey: 'totalPoints',
     header: ({ column }) => <SortButton column={column}>Total Points</SortButton>,
-    customCellClassName: 'text-lg font-bold ',
+    customCellClassName: 'text-2xl font-bold ',
   },
 ];

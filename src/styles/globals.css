@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../../public/fonts/stylesheet.css';
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +19,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: futura, Arial, sans-serif;
+  font-family: 'Futura PT', Arial, sans-serif;
 }
 
 @layer base {
@@ -102,7 +104,7 @@ body {
 }
 
 .masked-content {
-  background-color: #f0f0f0; /* Set your desired background color */
+  background-color: #00162b;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
 }

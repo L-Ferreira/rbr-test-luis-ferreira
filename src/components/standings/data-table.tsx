@@ -39,7 +39,7 @@ export const DataTable = <TData, TValue>({ columns, data }: DataTableProps<TData
   });
 
   return (
-    <div className="rounded-md ">
+    <div className="rounded-md md:px-2 ">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -73,7 +73,10 @@ export const DataTable = <TData, TValue>({ columns, data }: DataTableProps<TData
                     '';
 
                   return (
-                    <TableCell key={cell.id} className={`h-16 text-base ${customCellClassName}`}>
+                    <TableCell
+                      key={cell.id}
+                      className={`h-16 text-base md:text-xl ${customCellClassName}`}
+                    >
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </TableCell>
                   );

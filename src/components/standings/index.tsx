@@ -36,7 +36,7 @@ const StandingsTable = ({ season }: StandingsTableProps) => {
         className="flex justify-center items-center min-h-screen "
         data-testid="loading-standings"
       >
-        <div className="text-white">Loading standings...</div>
+        <div className="text-white text-2xl">Loading standings...</div>
       </div>
     );
   }
@@ -47,18 +47,18 @@ const StandingsTable = ({ season }: StandingsTableProps) => {
         className="flex justify-center items-center min-h-screen "
         data-testid="error-fetching-standings"
       >
-        <div className="text-redbull-red">Error: {error}</div>
+        <div className="text-redbull-red text-2xl">Error: {error}</div>
       </div>
     );
   }
 
   return (
     <div
-      className="container mx-auto py-32 min-h-screen p-8"
+      className="container mx-auto py-32 min-h-screen p-8 md:px-10"
       data-testid="standings-table-container"
     >
       <h1
-        className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-14"
+        className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl pb-14"
         data-testid="standings-table-title"
       >
         2023 Driver Standings
