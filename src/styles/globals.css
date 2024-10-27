@@ -22,6 +22,10 @@ body {
 
 @layer base {
   :root {
+    /* Blue: #001a30
+    • Red: #ea1d2d
+    • Grey: #a8a9ac
+    • Yellow: #fcd700 */
     --redbull-blue: 208 100% 9%;
     --redbull-red: 355 83% 52%;
     --redbull-grey: 225 2% 67%;
