@@ -26,6 +26,7 @@ body {
     --redbull-red: 355 83% 52%;
     --redbull-grey: 225 2% 67%;
     --redbull-yellow: 51 100% 49%;
+    --redbull-background-opacity: 0, 0%, 100%;
 
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -58,6 +59,8 @@ body {
     --redbull-red: 355 83% 52%;
     --redbull-grey: 225 2% 67%;
     --redbull-yellow: 51 100% 49%;
+    --redbull-background-opacity: 0, 0%, 100%;
+
 
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;

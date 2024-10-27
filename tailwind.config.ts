@@ -62,6 +62,7 @@ const config: Config = {
 				red: 'hsl(var(--redbull-red))',
 				grey: 'hsl(var(--redbull-grey))',
 				yellow: 'hsl(var(--redbull-yellow))',
+				'background-opacity': 'hsla(var(--redbull-background-opacity), 0.2)',
 			}
   		},
   		borderRadius: {

@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed inset-0 w-full h-20 z-50 transition-all duration-200 ${
-        isScrolled ? 'backdrop-blur-lg' : ''
+        isScrolled ? 'bg-redbull-background-opacity backdrop-blur-lg' : ''
       }`}
     >
       <div className="mx-auto px-4 h-20 flex items-center justify-between">
