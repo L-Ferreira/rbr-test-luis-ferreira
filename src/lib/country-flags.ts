@@ -1,0 +1,18 @@
+export const FLAGS: Record<string, string> = {
+  GB: 'https://flagcdn.com/w20/gb.png',
+  NL: 'https://flagcdn.com/w20/nl.png',
+  MX: 'https://flagcdn.com/w20/mx.png',
+  FI: 'https://flagcdn.com/w20/fi.png',
+  MC: 'https://flagcdn.com/w20/mc.png',
+  ES: 'https://flagcdn.com/w20/es.png',
+  AU: 'https://flagcdn.com/w20/au.png',
+  CA: 'https://flagcdn.com/w20/ca.png',
+  FR: 'https://flagcdn.com/w20/fr.png',
+  TH: 'https://flagcdn.com/w20/th.png',
+  JP: 'https://flagcdn.com/w20/jp.png',
+  DE: 'https://flagcdn.com/w20/de.png',
+  CN: 'https://flagcdn.com/w20/cn.png',
+  DK: 'https://flagcdn.com/w20/dk.png',
+  NZ: 'https://flagcdn.com/w20/nz.png',
+  US: 'https://flagcdn.com/w20/us.png',
+};
