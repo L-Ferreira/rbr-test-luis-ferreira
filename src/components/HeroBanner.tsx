@@ -16,9 +16,9 @@ const HeroBanner = () => {
   const textY = useTransform(scrollYProgress, [0, 1], [0, 200]);
   return (
     <div ref={ref} className="w-full h-screen overflow-hidden relative grid masked-content">
-      <div className="flex flex-col max-w-5xl mx-6 mt-44 gap-80 md:ml-20 lg:ml-[120px] md:mt-[220px] md:gap-[180px] lg:gap-[230px]">
+      <div className="flex flex-col max-w-5xl mx-6 mt-44 gap-72 md:ml-20 lg:ml-[120px] md:mt-[160px] md:gap-[180px] lg:gap-[230px]">
         <motion.h1
-          className="font-bold text-white text-[6rem] md:text-9xl lg:text-[9.5rem] leading-none relative z-10"
+          className="font-bold text-white text-[6rem] md:text-9xl lg:text-[10rem] xl:text-[11rem] leading-none relative z-10"
           style={{
             y: textY,
           }}
@@ -28,10 +28,10 @@ const HeroBanner = () => {
         </motion.h1>
 
         <div className="flex flex-col z-30 gap-5" data-testid="hero-description">
-          <div className="flex items-center text-3xl font-bold rounded shadow-md gap-4">
+          <div className="flex items-center text-2xl font-bold rounded shadow-md gap-4">
             <Calendar className="h-6 w-6" /> <span>26 – 28 MAY 2023</span>
           </div>
-          <div className="flex items-center text-3xl font-bold rounded shadow-md gap-4">
+          <div className="flex items-center text-2xl font-bold rounded shadow-md gap-4">
             <Image
               src={FLAGS['MC']}
               width="35"

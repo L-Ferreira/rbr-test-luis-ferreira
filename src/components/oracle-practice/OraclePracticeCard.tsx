@@ -29,12 +29,12 @@ const OraclePracticeCard = ({
       >
         <CardHeader>
           <CardTitle className="flex justify-end">
-            {Icon && <Icon fill="#fff" strokeWidth={1} className="w-4 h-4" />}
+            {Icon && <Icon fill="#fff" strokeWidth={1} className="w-5 h-5" />}
           </CardTitle>
         </CardHeader>
         <CardFooter className="flex flex-col gap-4 items-start">
-          <p className="font-bold text-2xl">{title}</p>
-          <div className="flex w-full justify-between text-sm items-baseline">
+          <p className="font-bold text-xl">{title}</p>
+          <div className="flex w-full justify-between text-base items-baseline">
             <div className="bg-redbull-background-opacity backdrop-blur-lg rounded px-2 py-1">
               {type}
             </div>

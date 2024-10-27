@@ -104,7 +104,7 @@ body {
 }
 
 .masked-content {
-  background-color: #f0f0f0; /* Set your desired background color */
-  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
-  mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
+    background-color: #00162B;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
 }
