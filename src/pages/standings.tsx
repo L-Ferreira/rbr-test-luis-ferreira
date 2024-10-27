@@ -1,10 +1,13 @@
+import StandingsTable from '@/components/standings';
+import Head from 'next/head';
 
-import StandingsTable from "@/components/standings";
-
-
-export default function Home() {
+export default function Standings() {
   return (
-          <StandingsTable season={2023} />
-
+    <>
+      <Head>
+        <title>2023 Driver Standings</title>
+      </Head>
+      <StandingsTable season={2023} />
+    </>
   );
 }

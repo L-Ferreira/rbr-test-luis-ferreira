@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { DriverStanding } from './types';
 
-
 import { debounce } from 'lodash';
 
 const makeRequest = async (season: number): Promise<DriverStanding[]> => {
@@ -19,4 +18,3 @@ export const getDriverStandings = debounce(makeRequest, 500, {
   trailing: false,
   maxWait: 2000,
 });
-

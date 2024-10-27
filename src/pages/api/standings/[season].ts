@@ -8,16 +8,13 @@ const apiClient = axios.create({
   baseURL: process.env.API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
-    'x-api-key': process.env.REDBULL_API_KEY, 
+    'x-api-key': process.env.REDBULL_API_KEY,
   },
 });
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { season } = req.query;
-  
+
   try {
     const response = await apiClient.get<DriverStandingResponse[]>(`/${season}`);
     const transformedData = transformDriverData(response.data);
@@ -26,4 +23,6 @@ export default async function handler(
     console.error('Error fetching driver standings:', error);
     res.status(500).json({ error: 'Failed to fetch driver standings' });
   }
-}
+};
+
+export default handler;

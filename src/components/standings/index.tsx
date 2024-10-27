@@ -8,7 +8,7 @@ interface StandingsTableProps {
   season: number;
 }
 
-const StandingsTable: React.FC<StandingsTableProps> = ({ season }) => {
+const StandingsTable = ({ season }: StandingsTableProps) => {
   const [standings, setStandings] = useState<DriverStanding[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -46,7 +46,7 @@ const StandingsTable: React.FC<StandingsTableProps> = ({ season }) => {
   }
 
   return (
-    <div className="container mx-auto py-10 min-h-screen p-8">
+    <div className="container mx-auto py-32 min-h-screen p-8">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-14">
         2023 Driver Standings
       </h1>

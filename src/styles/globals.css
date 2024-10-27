@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura, Arial, sans-serif;
 }
 
 @layer base {
@@ -93,4 +93,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.masked-content {
+  background-color: #f0f0f0; /* Set your desired background color */
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
 }
