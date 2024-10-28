@@ -16,7 +16,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { season } = req.query;
 
   try {
-    const response = await apiClient.get<DriverStandingResponse[]>(`/${season}`);
+    const response = await apiClient.get<DriverStandingResponse[]>(`/api/stats/drivers/${season}`);
     const transformedData = transformDriverData(response.data);
     res.status(200).json(transformedData);
   } catch (error) {
